@@ -147,6 +147,4 @@ async def main():
         await run_dummy_server()
     print("Бот успешно запущен и слушает сообщения...")
     await dp.start_polling(bot)
-
-if name == "__main__":
-    asyncio.run(main())
+asyncio.run(main())

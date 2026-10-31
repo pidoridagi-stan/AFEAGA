@@ -98,7 +98,7 @@ async def handle_photo(message: Message):
         await message.answer(f"✅ Фото сохранено! Всего фото в базе: <b>{count}</b>.")
     else:
         await message.answer("⚠️ Не удалось сохранить фото (возможно, оно уже есть).")
-      @dp.message(F.text == "📸 Получить все фото")
+@dp.message(F.text == "📸 Получить все фото")
 async def handle_get_photos(message: Message):
     photos = await get_all_photos()
     if not photos:
